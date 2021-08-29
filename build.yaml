@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
     - name: dotnet
-      image: mcr.microsoft.com/dotnet/core/sdk:3.0-alpine as build
+      image: mcr.microsoft.com/dotnet/aspnet:5.0
       command:
         - cat
       tty: true
