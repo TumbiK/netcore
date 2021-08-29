@@ -1,0 +1,8 @@
+C:\netapps\cicd\obj\Debug\net5.0\cicd.csproj.AssemblyReference.cache
+C:\netapps\cicd\obj\Debug\net5.0\cicd.GeneratedMSBuildEditorConfig.editorconfig
+C:\netapps\cicd\obj\Debug\net5.0\cicd.AssemblyInfoInputs.cache
+C:\netapps\cicd\obj\Debug\net5.0\cicd.AssemblyInfo.cs
+C:\netapps\cicd\obj\Debug\net5.0\cicd.csproj.CoreCompileInputs.cache
+C:\netapps\cicd\obj\Debug\net5.0\cicd.MvcApplicationPartsAssemblyInfo.cache
+C:\netapps\cicd\obj\Debug\net5.0\cicd.RazorAssemblyInfo.cache
+C:\netapps\cicd\obj\Debug\net5.0\cicd.RazorAssemblyInfo.cs
