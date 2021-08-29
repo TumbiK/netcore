@@ -5,6 +5,9 @@ metadata:
     some-label: pod
 spec:
   containers:
+    - name: jnlp
+      image: 'jenkins/inbound-agent:4.7-1'
+      args: ['\$(JENKINS_SECRET)', '\$(JENKINS_NAME)']
     - name: dotnet
       image: mcr.microsoft.com/dotnet/aspnet:5.0
       command:

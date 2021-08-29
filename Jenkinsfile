@@ -4,7 +4,7 @@ pipeline {
         NAME = "${env.BRANCH_NAME == "main" ? "develop" : "example-staging"}"
         VERSION = '1.0'
         DOMAIN = 'localhost'
-        REGISTRY = 'k3d-erpregistry.localhost:5000'
+        REGISTRY = 'k3d-erpregistry.localhost:5000/core'
         REGISTRY_CREDENTIAL = ''
     }
     agent {
@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                container('maven') {
+                container('dotnet') {
                     sh 'dotnet build'
                 }
             }
