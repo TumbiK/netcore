@@ -1,0 +1,1 @@
+https://download.visualstudio.microsoft.com/download/pr/08b6d245-401d-4b11-8e75-f2db47b5f166/5809c92b864453f3f666b8a9ce82f826/dotnet-sdk-5.0.400-linux-musl-x64.tar.gz
