@@ -5,8 +5,8 @@ metadata:
     some-label: pod
 spec:
   containers:
-    - name: jnlp
-      image: 'jenkins/inbound-agent:4.7-1' 
+    - name: maven
+      image: maven:3.3.9-jdk-8-alpine
       command:
         - cat
       tty: true

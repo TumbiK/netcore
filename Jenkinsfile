@@ -17,7 +17,7 @@ pipeline {
         stage('Build') {
             steps {
                 container('dotnet') {
-                    sh 'dotnet build'
+                    sh 'mvn --version'
                 }
             }
         }
