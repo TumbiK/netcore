@@ -16,9 +16,10 @@ spec:
         - name: m2
           mountPath: /root/.m2
     - name: dotnet
-      image: dotnet:mcr.microsoft.com/dotnet/sdk:5.0
+      image: mcr.microsoft.com/dotnet/sdk:5.0
       command:
         - cat
+      tty: true
     - name: docker
       image: docker:19.03
       command:
