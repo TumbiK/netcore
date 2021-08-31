@@ -16,8 +16,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                container('maven') {
-                    sh 'mvn --version'
+                container('dotnet') {
+                    sh 'dotnet --version'
                 }
             }
         }

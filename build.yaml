@@ -15,6 +15,10 @@ spec:
       volumeMounts:
         - name: m2
           mountPath: /root/.m2
+    - name: dotnet
+      image: mcr.microsoft.com/dotnet/sdk:5.0
+      command:
+        - cat
     - name: docker
       image: docker:19.03
       command:
