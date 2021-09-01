@@ -9,20 +9,26 @@ pipeline {
     }
     agent {
         kubernetes {
-            defaultContainer 'jnlp'
+            
             yamlFile 'build.yaml'
         }
     }
     stages {
-        
+        stage('Build') {
+            steps {
+                container('jnlp') {
+                    sh 'dotnet --version'
+                }
+            }
+        }
         stage('Docker Build') {
             when {
                 environment name: 'DEPLOY', value: 'true'
             }
             steps {
-                
+                container('docker') {
                     sh "docker build -t ${REGISTRY}:${VERSION} ."
-               
+                }
             }
         }
         stage('Docker Publish') {

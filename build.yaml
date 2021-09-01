@@ -15,6 +15,9 @@ spec:
       volumeMounts:
         - name: m2
           mountPath: /root/.m2
+    - name: jnlp
+      image: mvallim/jnlp-slave-dotnet-framework
+      tty: true
     - name: docker
       image: docker:19.03
       command:
