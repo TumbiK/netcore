@@ -16,7 +16,7 @@ spec:
         - name: m2
           mountPath: /root/.m2
     - name: dotnet
-      image: appdynamics/dotnet-core-agent:latest
+      image: ivanakcheurov/jenkins-jnlp-slave-dotnet
       tty: true
       volumeMounts:
         - name: m2
