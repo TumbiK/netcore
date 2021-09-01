@@ -16,7 +16,7 @@ spec:
         - name: m2
           mountPath: /root/.m2
     - name: dotnet
-      image: appdynamics/dotnet-core-agent:latest
+      image: dotnet/sdk:5.0
      
     - name: docker
       image: docker:19.03
