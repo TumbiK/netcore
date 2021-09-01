@@ -7,7 +7,11 @@ pipeline {
         REGISTRY = 'k3d-erpregistry.localhost:5000/core'
         REGISTRY_CREDENTIAL = ''
     }
-    agent any
+    agent {
+        kubernetes {
+            defaultContainer 'jnlp'
+            yamlFile 'build.yaml'
+        }
     }
     stages {
         
@@ -16,9 +20,9 @@ pipeline {
                 environment name: 'DEPLOY', value: 'true'
             }
             steps {
-               
-                    sh "docker build -t ${REGISTRY}:${VERSION} ."
                 
+                    sh "docker build -t ${REGISTRY}:${VERSION} ."
+               
             }
         }
         stage('Docker Publish') {
