@@ -17,8 +17,6 @@ spec:
           mountPath: /root/.m2
     - name: dotnet
       image: appdynamics/dotnet-core-agent:latest
-      command:
-        - cat
       tty: true
     - name: docker
       image: docker:19.03
