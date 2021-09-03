@@ -16,7 +16,7 @@ spec:
         - name: m2
           mountPath: /root/.m2
     - name: jnlp
-      image: ivanakcheurov/jenkins-jnlp-slave-dotnet:v2
+      image: appdynamics/dotnet-core-agent:latest
       tty: true
     - name: docker
       image: docker:19.03
