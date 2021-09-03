@@ -19,7 +19,7 @@ spec:
       image: appdynamics/dotnet-core-agent:latest
       tty: true
       volumeMounts:
-        - name: dotnet
+        - name: m2
           mountPath: /appdynamics
     - name: docker
       image: docker:19.03
