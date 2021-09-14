@@ -13,12 +13,12 @@ pipeline {
     stages {
         stage('Build') {
 		agent {
-			label:"windows_slave"
+				label 'windows_slave'
 			}
             steps {
-                container('jnlp') {
-                    sh 'dotnet --version'
-                }
+                
+                   dotnet --version
+                
             }
         }
         stage('Docker Build') {
