@@ -15,11 +15,9 @@ pipeline {
 		agent {
 				label 'windows_slave'
 			}
-            steps {
-                
-                   dotnet --version
-                
-            }
+            steps {                
+                    'dotnet --version'
+				   }
         }
         stage('Docker Build') {
 		agent {
