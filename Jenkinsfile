@@ -16,7 +16,7 @@ pipeline {
 				label 'windows_slave'
 			}
             steps {                
-                   sh 'dotnet --version'
+                   bat 'dotnet --version'
 				   }
         }
         stage('Docker Build') {
